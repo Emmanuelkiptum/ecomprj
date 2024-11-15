@@ -1,19 +1,33 @@
-from core.models import CartOrderItems, Product, Category, Vendor, CartOrder, ProductImages, ProductReview, wishlist, Address
-from django.contrib.auth.models import AnonymousUser
+from core.models import Coupon, CartOrderProducts, Product, Category, Vendor, CartOrder, ProductImages, ProductReview, wishlist_model, Address
+from django.db.models import Min, Max
+from django.contrib import messages
 
 def default(request):
     categories = Category.objects.all()
+    vendors = Vendor.objects.all()
 
-    # Check if the user is authenticated
-    if isinstance(request.user, AnonymousUser):
-        address = None  # Handle case for unauthenticated users
-    else:
+    min_max_price = Product.objects.aggregate(Min("price"), Max("price"))
+    
+    
+    if request.user.is_authenticated:
         try:
-            address = Address.objects.get(user=request.user)
-        except Address.DoesNotExist:
-            address = None  # Handle case when no address is found for the user
+            wishlist = wishlist_model.objects.filter(user=request.user)
+        except:
+            messages.warning(request, "You need to login before accessing your wishlist.")
+            wishlist = 0
+    else:
+        wishlist = 0
+
+    
+    try:
+        address = Address.objects.get(user=request.user)
+    except:
+        address = None
 
     return {
-        'categories': categories,
-        'address': address,
+        'categories':categories,
+        'address':address,
+        'wishlist':wishlist,
+        'vendors':vendors,
+        'min_max_price':min_max_price,
     }

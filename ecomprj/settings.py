@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+from django.contrib.messages import constants as messages
+
+from environs import Env
+env = Env()
+env.read_env()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,6 +33,7 @@ SECRET_KEY = 'django-insecure-j@pn%2k#7fv3o=yd9(73l9a&3mpm^1fq7d1+0xyh^+(you=-#z
 DEBUG = True
 
 ALLOWED_HOSTS = []
+SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
 
 
 # Application definition
@@ -42,6 +49,8 @@ INSTALLED_APPS = [
     
     #Third party
     'taggit',
+    'ckeditor',
+    'paypal.standard.ipn',
     
     #Custom Apps
     'core',
@@ -147,4 +156,33 @@ JAZZMIN_SETTINGS = {
     'copyright': "emmanuel-shop.com",
 }
 
+LOGIN_URL = "userauths:sign-in"
+
+
 AUTH_USER_MODEL = 'userauths.User'
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+
+
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'skin': 'moono',
+        'codeSnippet_theme': 'monokai',
+        'toolbar': 'all',
+        'extraPlugins': ','.join(
+            [
+                'codesnippet',
+                'widget',
+                'dialog'
+            ]
+        )
+    }
+}
+
+
+STRIPE_SECRET_KEY = env("STRIPE_SECRET_KEY")
+STRIPE_PUBLIC_KEY = env("STRIPE_PUBLIC_KEY")
+
+PAYPAL_RECEIVER_EMAIL = 'businessdestiny@gmail.com'
+PAYPAL_TEST = True

@@ -95,7 +95,7 @@ $(document).ready(function () {
             },
             success: function (response) {
                 console.log(response.length);
-                console.log("Data filtred successfully...");
+                console.log("Data filtered successfully...");
                 $(".totall-product").hide()
                 $("#filtered-product").html(response.data)
             }
@@ -177,7 +177,13 @@ $(document).ready(function () {
                 this_val.html("<i class='fas fa-check-circle'></i>")
 
                 console.log("Added Product to Cart!");
+
+
                 $(".cart-items-count").text(response.totalcartitems)
+   
+                 // Show an alert message to the user
+                 alert(response.message); // Dynamically show the message
+
 
 
             }
@@ -267,6 +273,13 @@ $(document).ready(function () {
 
                     $(".check" + id).show()
                     $(".button" + id).hide()
+
+
+                // Optionally, disable the "Make Default" button for the new default address
+                this_val.hide();
+                
+                // Optionally, remove "Make Default" from other addresses
+                $(".make-default-address").not(this_val).show();
 
                 }
             }

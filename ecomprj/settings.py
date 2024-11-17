@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
+import dj_database_url
 from django.contrib.messages import constants as messages
 
 from environs import Env
@@ -32,7 +34,7 @@ SECRET_KEY = 'django-insecure-j@pn%2k#7fv3o=yd9(73l9a&3mpm^1fq7d1+0xyh^+(you=-#z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
 
 
@@ -139,6 +141,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS =[os.path.join(BASE_DIR, 'static')]
+django_heroku.settings(locals())
 
 MEDIA_URL = '/media/'
 

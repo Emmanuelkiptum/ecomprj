@@ -177,7 +177,13 @@ $(document).ready(function () {
                 this_val.html("<i class='fas fa-check-circle'></i>")
 
                 console.log("Added Product to Cart!");
+
+
                 $(".cart-items-count").text(response.totalcartitems)
+   
+                 // Show an alert message to the user
+                 alert(response.message); // Dynamically show the message
+
 
 
             }

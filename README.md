@@ -24,4 +24,9 @@ This project is a feature-rich E-Commerce Web Application developed using HTML, 
 
 ![Screenshot (10)](https://github.com/user-attachments/assets/0398067c-2cc6-4255-a911-a785ab81e4a6)
 
+6). YOUR CART
+
+![Screenshot (11)](https://github.com/user-attachments/assets/2dfb1140-7e9a-43e3-8154-972b0e5e5788)
+
+
 

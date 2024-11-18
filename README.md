@@ -10,11 +10,11 @@ This project is a feature-rich E-Commerce Web Application developed using HTML, 
 
 (ii) Make sure to install all the dependency using Git/Bah/CMD terminal:    pip install -r requirements. txt
 
-(iii) Run:                  python manage.py collectstatic
-                            python manage.py makemigrations 
-                            python manage.py migrate
-                            python manage.py createsuperuser
-(iv) And finally run:       python manage.py runserver
+(iii) Run:                     python manage.py collectstatic
+(iv)                           python manage.py makemigrations 
+(v)                            python manage.py migrate
+(vi)                           python manage.py createsuperuser
+(vii) And finally run:         python manage.py runserver
 
 
 

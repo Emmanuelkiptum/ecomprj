@@ -28,5 +28,9 @@ This project is a feature-rich E-Commerce Web Application developed using HTML, 
 
 ![Screenshot (11)](https://github.com/user-attachments/assets/2dfb1140-7e9a-43e3-8154-972b0e5e5788)
 
+7). SHIPPING & BIO DETAILS
+
+![Screenshot (12)](https://github.com/user-attachments/assets/dc94e605-f9e5-4f86-99b1-a49d2684b4f7)
+
 
 

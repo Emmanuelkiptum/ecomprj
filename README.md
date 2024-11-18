@@ -5,4 +5,5 @@ This project is a feature-rich E-Commerce Web Application developed using HTML, 
 
 
 SAVANNAH E-COMMERCE APPLICATION FLOW CHART
+
 ![Screenshot (6)](https://github.com/user-attachments/assets/c0ab267e-6b8d-435f-b0a9-e0213e1ea465)

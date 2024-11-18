@@ -10,4 +10,6 @@ This project is a feature-rich E-Commerce Web Application developed using HTML, 
 
 2). LOGIN PAGE
 
+![Screenshot (7)](https://github.com/user-attachments/assets/6ae98609-3099-4399-9472-71c53a04ca27)
+
 

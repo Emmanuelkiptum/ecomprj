@@ -1,4 +1,4 @@
-# ecomprj
+# SAVANNAH INFORMATICS E-COMMERCE APPLICATION
 
 E-COMMERCE WEB APPLICATION
 This project is a feature-rich E-Commerce Web Application developed using HTML, CSS, Jquery and JavaScript for the frontend, with a Django REST API + POSTGRESQL powering the backend. The application provides users with an intuitive platform for browsing, purchasing, and managing products, while ensuring seamless communication between the frontend and backend.

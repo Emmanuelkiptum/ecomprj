@@ -20,4 +20,8 @@ This project is a feature-rich E-Commerce Web Application developed using HTML, 
 
 ![Screenshot (9)](https://github.com/user-attachments/assets/64e84631-c76d-4b51-bc65-27b562993f5f)
 
+5). PRODUCT DETAILS
+
+![Screenshot (10)](https://github.com/user-attachments/assets/0398067c-2cc6-4255-a911-a785ab81e4a6)
+
 

@@ -36,5 +36,8 @@ This project is a feature-rich E-Commerce Web Application developed using HTML, 
 
 ![Screenshot (13)](https://github.com/user-attachments/assets/d57c81a6-19f5-4ace-bd8f-b4e52407a6fd)
 
+9). ORDER DURATION GRAPHS
+
+![Screenshot (14)](https://github.com/user-attachments/assets/81a137cc-9b3e-4f41-b3ec-2352a5b7cb42)
 
 

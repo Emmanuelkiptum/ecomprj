@@ -12,4 +12,8 @@ This project is a feature-rich E-Commerce Web Application developed using HTML, 
 
 ![Screenshot (7)](https://github.com/user-attachments/assets/6ae98609-3099-4399-9472-71c53a04ca27)
 
+3). REGISTRATION PAGE
+
+![Screenshot (8)](https://github.com/user-attachments/assets/0dbb2f9d-143f-4048-9da2-4b0d639260fb)
+
 

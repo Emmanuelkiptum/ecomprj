@@ -2,6 +2,18 @@
 
 This project is a feature-rich E-Commerce Web Application developed using HTML, CSS, Jquery and JavaScript for the frontend, with a Django REST API + POSTGRESQL powering the backend. The application provides users with an intuitive platform for browsing, purchasing, and managing products, while ensuring seamless communication between the frontend and backend.
 
+# PROCEDURE ON HOW TO RUN THE APPLICATION
+(i) Make sure you have downloaded GIT and POSTGRESQL
+
+(ii) Make sure to install all the dependency using Git/Bah/CMD terminal:    pip install -r requirements. txt
+
+(iii) Run:                  python manage.py collectstatic
+                            python manage.py makemigrations 
+                            python manage.py migrate
+                            python manage.py createsuperuser
+(iv) And finally run:       python manage.py runserver
+
+
 
 1).FLOW CHART
 

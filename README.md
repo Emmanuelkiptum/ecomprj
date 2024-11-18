@@ -41,3 +41,7 @@ This project is a feature-rich E-Commerce Web Application developed using HTML, 
 ![Screenshot (14)](https://github.com/user-attachments/assets/81a137cc-9b3e-4f41-b3ec-2352a5b7cb42)
 
 
+10). TRACKING CUSTOMER ORDERS
+
+![Screenshot (15)](https://github.com/user-attachments/assets/6b5e1967-1f92-4663-b69f-c3cceb220606)
+

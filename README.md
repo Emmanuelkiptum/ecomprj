@@ -32,5 +32,9 @@ This project is a feature-rich E-Commerce Web Application developed using HTML, 
 
 ![Screenshot (12)](https://github.com/user-attachments/assets/dc94e605-f9e5-4f86-99b1-a49d2684b4f7)
 
+8). CUSTOMER DASHBOARD
+
+![Screenshot (13)](https://github.com/user-attachments/assets/d57c81a6-19f5-4ace-bd8f-b4e52407a6fd)
+
 
 
